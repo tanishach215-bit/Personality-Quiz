@@ -1,0 +1,171 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fce4ec, #e1bee7, #d1c4e9);
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #333;
+}
+
+/* Main Container */
+.result-container {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Main Heading */
+h1 {
+    color: #8e24aa;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Score Circle */
+.score-circle {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ce4bc4, #7b1fa2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(142, 36, 170, 0.25);
+}
+
+#totalScore {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.score-label {
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+/* Personality Type */
+#personalityType {
+    color: #8e24aa;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+/* Short Result Message */
+.result-message {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Personality Description Section */
+.understanding {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.understanding > h2 {
+    text-align: center;
+    color: #6a1b9a;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+/* Only One Personality Card */
+.personality-card {
+    background: #faf3fc;
+    border: 1px solid #e1bee7;
+    border-left: 5px solid #ab47bc;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.personality-card h3 {
+    color: #8e24aa;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.personality-card p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Disclaimer */
+.note {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 25px 0;
+}
+
+/* Take Quiz Again Button */
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px;
+    background: linear-gradient(135deg, #ab47bc, #7b1fa2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #6a1b9a;
+    transform: translateY(-2px);
+}
+
+button:focus-visible {
+    outline: 3px solid #ff9800;
+    outline-offset: 3px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .result-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #personalityType {
+        font-size: 21px;
+    }
+
+    .personality-card {
+        padding: 15px;
+    }
+
+    .personality-card p {
+        font-size: 14px;
+    }
+}

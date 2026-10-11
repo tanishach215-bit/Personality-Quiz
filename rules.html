@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Quiz Rules</title>
+    <link rel="stylesheet" href="rules.css">
+</head>
+
+<body>
+
+    <main class="rules-container">
+
+        <div class="rules-decoration decoration-one">✦</div>
+        <div class="rules-decoration decoration-two">✧</div>
+
+        <header class="rules-header">
+
+            <div class="rules-icon">🧠</div>
+
+            <p class="rules-subtitle">YOUR PERSONALITY JOURNEY</p>
+
+            <h1>Before You Begin!</h1>
+
+            <p class="rules-intro">
+                Read these simple rules before discovering your personality.
+            </p>
+
+            <div class="quiz-steps">
+                <span class="active">1. Rules</span>
+                <span class="arrow">→</span>
+                <span>2. Quiz</span>
+                <span class="arrow">→</span>
+                <span>3. Result</span>
+            </div>
+
+        </header>
+
+        <section class="rules-card">
+
+            <h2>📋 Quiz Rules</h2>
+
+            <ol class="rules-list">
+
+                <li>
+                    <span class="rule-icon">📝</span>
+                    <span>The quiz contains 10 questions in total.</span>
+                </li>
+
+                <li>
+                    <span class="rule-icon">🔘</span>
+                    <span>Each question has three (3) options.</span>
+                </li>
+
+                <li>
+                    <span class="rule-icon">☝️</span>
+                    <span>Select only one option for each question.</span>
+                </li>
+
+                <li>
+                    <span class="rule-icon">⭐</span>
+                    <span>Each option has a different number of marks.</span>
+                </li>
+
+                <li>
+                    <span class="rule-icon">💡</span>
+                    <span>The marks depend on the option you choose.</span>
+                </li>
+
+                <li>
+                    <span class="rule-icon">📖</span>
+                    <span>Read every question carefully before answering.</span>
+                </li>
+
+                <li>
+                    <span class="rule-icon">➕</span>
+                    <span>The marks from all your selected options are added together.</span>
+                </li>
+
+                <li>
+                    <span class="rule-icon">🎯</span>
+                    <span>Your selected answers determine your total score.</span>
+                </li>
+
+                <li>
+                    <span class="rule-icon">✅</span>
+                    <span>Answer all 10 questions before submitting the quiz.</span>
+                </li>
+
+                <li>
+                    <span class="rule-icon">🎉</span>
+                    <span>Your personality category is determined by your total score.</span>
+                </li>
+
+            </ol>
+
+        </section>
+
+        <div class="agreement">
+            <input type="checkbox" id="agreeCheckbox">
+            <label for="agreeCheckbox">
+                I have read and agree to all the quiz rules.
+            </label>
+        </div>
+
+        <button type="button" id="nextButton" disabled>
+            Start Quiz →
+        </button>
+
+        <p id="message" aria-live="polite"></p>
+
+        <footer class="rules-footer">
+            Take your time, trust yourself, and enjoy the quiz! 💜
+        </footer>
+
+    </main>
+
+    <script src="rules.js"></script>
+
+</body>
+</html>

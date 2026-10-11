@@ -1,0 +1,317 @@
+/* body{
+    margin:0;
+    font-family: Arial,sans-serif;
+    text-align:center; */
+    /* background-color:rgb(250, 242, 233); */
+     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJ5-xLP8zcDWjT2o3IU_OiIeuKKxxKyUkHop03e04fQ&s=10"); 
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGyK3j7a2DXki2KboUMEppEPijVe7Antf7buky0KV-SA&s=10"); */
+    /* background-size: cover;
+    background-position: center 0px 0px 0px 0px;
+    background-repeat: no-repeat;
+    min-height: 10vh;
+
+} */
+
+/* main{
+
+    margin-top: 100px;
+} */
+
+/* h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top:40px;
+    font-size:40px;
+    color:black;
+}
+
+h3{
+    font-family:cursive;
+    margin:30px;
+    font-size:35px;
+    color:rgb(41, 0, 0);
+} */
+
+/* button{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:12px 25px;
+    margin-left:10px;
+    margin-top:80px;
+    border: 7px solid black;
+    font-size:50px;
+    cursor:pointer;
+    background-color: rgb(205, 241, 161);
+}
+
+h1{
+    font-size:130px;
+    color:black;
+    margin-top: 50px;
+} */
+
+/* .personality-images{
+    height
+    margin-left:111px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:400px;
+}  */
+
+/* .rules{
+    text-align: left;
+    max-width: 900px;
+    margin: auto;
+}
+
+.rules h2 {
+    text-align:center;
+}
+
+.rule li{
+    margin-bottom: 10px;
+    line-height: 1.5;
+} */
+
+/* ===== Personality Quiz Graphics ===== */
+
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    isolation: isolate;
+    background: linear-gradient(
+        135deg,
+        #fff0f6,
+        #f0e7ff,
+        #e7e9ff
+    );
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Main content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 700px;
+    padding: 35px 20px;
+    animation: fadeIn 1s ease both;
+}
+
+/* Brain icon */
+.personality-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 10px 30px rgba(126, 87, 194, 0.16);
+    font-size: 52px;
+    animation: floatIcon 3s ease-in-out infinite;
+}
+
+/* Small heading */
+.welcome-text {
+    color: #9552b8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+/* Main heading */
+.hero-content h1 {
+    color: #44305f;
+    font-size: clamp(34px, 6vw, 58px);
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.hero-content h1 span {
+    display: block;
+    color: #a14bd1;
+}
+
+/* Description */
+.hero-description {
+    max-width: 550px;
+    margin: 0 auto 25px;
+    color: #625873;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Personality labels */
+.personality-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.personality-tags span {
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #73508d;
+    border: 1px solid #ead8f8;
+    border-radius: 25px;
+    font-size: 13px;
+}
+
+/* Start button */
+.start-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 35px;
+    color: white;
+    background: linear-gradient(135deg, #b34fd0, #7950c9);
+    text-decoration: none;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(121, 80, 201, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.start-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(121, 80, 201, 0.35);
+}
+
+.start-btn span {
+    font-size: 22px;
+}
+
+/* Small footer text */
+.small-text {
+    color: #887a9a;
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+/* Decorative floating shapes */
+.graphic {
+    position: absolute;
+    z-index: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: floatShape 7s ease-in-out infinite;
+}
+
+.graphic-one {
+    width: 220px;
+    height: 220px;
+    top: 7%;
+    left: -65px;
+    background: rgba(244, 143, 177, 0.25);
+}
+
+.graphic-two {
+    width: 280px;
+    height: 280px;
+    right: -85px;
+    bottom: 4%;
+    background: rgba(179, 136, 255, 0.22);
+    animation-delay: -2s;
+}
+
+.graphic-three {
+    width: 85px;
+    height: 85px;
+    top: 15%;
+    right: 13%;
+    background: rgba(255, 213, 79, 0.25);
+    animation-delay: -4s;
+}
+
+/* Animations */
+@keyframes floatIcon {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes floatShape {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-18px) rotate(8deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile design */
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 25px 12px;
+    }
+
+    .hero-content {
+        padding: 25px 10px;
+    }
+
+    .personality-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .personality-tags {
+        gap: 8px;
+    }
+
+    .personality-tags span {
+        padding: 9px 11px;
+        font-size: 12px;
+    }
+
+    .start-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .hero-content,
+    .personality-icon,
+    .graphic {
+        animation: none;
+    }
+
+    .start-btn {
+        transition: none;
+    }
+}

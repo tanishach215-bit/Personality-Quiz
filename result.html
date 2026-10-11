@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Personality Result</title>
+
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+
+    <div class="floating-stars" aria-hidden="true">
+        <span>✦</span>
+        <span>✧</span>
+        <span>♡</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>♡</span>
+    </div>
+
+    <main class="result-container">
+
+        <header class="result-header">
+            <div class="result-icon">🎀</div>
+
+            <p class="eyebrow">YOUR PERSONALITY REVEALED</p>
+
+            <h1>Your Results Are Here!</h1>
+
+            <p class="intro">
+                Every personality is unique. Let's discover yours!
+            </p>
+        </header>
+
+        <section class="score-card">
+            <p class="card-label">YOUR PERSONALITY SCORE</p>
+
+            <div class="score-circle" id="scoreCircle">
+                <div class="score-inner">
+                    <span id="scoreValue">--</span>
+                    <span class="score-total">out of 30</span>
+                </div>
+            </div>
+
+            <p class="score-caption" id="scoreCaption">
+                Your result is ready ✨
+            </p>
+        </section>
+
+        <section class="personality-card">
+            <div class="personality-illustration" id="personalityEmoji">
+                🌷
+            </div>
+
+            <p class="card-label">YOUR PERSONALITY TYPE</p>
+
+            <h2 id="personalityTitle">Discovering your type...</h2>
+
+            <p class="personality-description" id="personalityDescription">
+                Your personality result will appear here.
+            </p>
+
+            <div class="personality-tag" id="personalityTag">
+                ✨ One of a kind
+            </div>
+        </section>
+
+        <section class="message-card">
+            <div class="message-icon">💌</div>
+
+            <h3>A Little Reminder</h3>
+
+            <p>
+                There is no perfect personality. Your answers are just
+                one way to reflect on yourself, and you can always grow
+                and discover new things about who you are.
+            </p>
+        </section>
+
+        <div class="result-actions">
+            <button type="button" id="retakeButton" class="retake-button">
+                ↻ Retake Quiz
+            </button>
+
+            <button type="button" id="homeButton" class="home-button">
+                ⌂ Home
+            </button>
+        </div>
+
+        <p class="disclaimer">
+            This quiz is for self-reflection and entertainment only,
+            not a psychological diagnosis.
+        </p>
+
+        <footer class="result-footer">
+            Made with ♡ just for you
+        </footer>
+
+    </main>
+
+    <script src="result.js"></script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personality Quiz</title>
+
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <main class="quiz-container">
+
+        <!-- Decorative Graphics -->
+        <div class="quiz-decoration decoration-one">✦</div>
+        <div class="quiz-decoration decoration-two">✧</div>
+
+        <!-- Quiz Header -->
+        <header class="quiz-header">
+
+            <div class="quiz-icon">🧠</div>
+
+            <p class="quiz-subtitle">DISCOVER YOURSELF</p>
+
+            <h1>Personality Quiz</h1>
+
+            <p class="quiz-description">
+                Answer honestly and discover more about your personality!
+            </p>
+
+            <div class="quiz-progress">
+                <span>✨</span>
+                <span id="questionProgress">Question 1 of 10</span>
+            </div>
+
+        </header>
+
+        <!-- Question 1 -->
+        <section class="question-box">
+
+            <p class="question-number">QUESTION 01</p>
+
+            <h2>
+                You're really busy at work or study and a friend is telling
+                you their life problems. You:
+            </h2>
+
+            <div class="options">
+                <button type="button" class="option" onclick="selectOption(this)">
+                    A. Listen, but without any interest
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    B. Interrupt and tell them that you are busy
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    C. Listen to their problem and try to help; work can wait
+                </button>
+            </div>
+
+            <button type="button" class="next-btn" onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </section>
+
+        <!-- Question 2 -->
+        <section class="question-box">
+
+            <p class="question-number">QUESTION 02</p>
+
+            <h2>
+                People describe you as thoughtful, reserved and soft-spoken:
+            </h2>
+
+            <div class="options">
+                <button type="button" class="option" onclick="selectOption(this)">
+                    A. Always, because you're very quiet
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    B. Sometimes, because you're talkative with your close ones
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    C. Never, because you're very talkative
+                </button>
+            </div>
+
+            <button type="button" class="next-btn" onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </section>
+
+        <!-- Question 3 -->
+        <section class="question-box">
+
+            <p class="question-number">QUESTION 03</p>
+
+            <h2>How do you prefer to communicate?</h2>
+
+            <div class="options">
+                <button type="button" class="option" onclick="selectOption(this)">
+                    A. Text messages
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    B. Video call
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    C. Voice call
+                </button>
+            </div>
+
+            <button type="button" class="next-btn" onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </section>
+
+        <!-- Question 4 -->
+        <section class="question-box">
+
+            <p class="question-number">QUESTION 04</p>
+
+            <h2>What do you do at a social event?</h2>
+
+            <div class="options">
+                <button type="button" class="option" onclick="selectOption(this)">
+                    A. Try to leave or escape
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    B. Try to find your close friends
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    C. Go and meet new people
+                </button>
+            </div>
+
+            <button type="button" class="next-btn" onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </section>
+
+        <!-- Question 5 -->
+        <section class="question-box">
+
+            <p class="question-number">QUESTION 05</p>
+
+            <h2>
+                When you're dealing with a personal problem, you prefer to:
+            </h2>
+
+            <div class="options">
+                <button type="button" class="option" onclick="selectOption(this)">
+                    A. Solve it by your own
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    B. Share with people and ask for help
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    C. Share with close friends
+                </button>
+            </div>
+
+            <button type="button" class="next-btn" onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </section>
+
+        <!-- Question 6 -->
+        <section class="question-box">
+
+            <p class="question-number">QUESTION 06</p>
+
+            <h2>
+                In your family or group, the discussion moves to a subject
+                about which you know nothing at all. What would you do?
+            </h2>
+
+            <div class="options">
+                <button type="button" class="option" onclick="selectOption(this)">
+                    A. Listen quietly to show people that you know
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    B. Ask questions to know more about the topic
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    C. Don't want to be a part of the discussion
+                </button>
+            </div>
+
+            <button type="button" class="next-btn" onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </section>
+
+        <!-- Question 7 -->
+        <section class="question-box">
+
+            <p class="question-number">QUESTION 07</p>
+
+            <h2>
+                Even a small mistake can cause you to doubt your overall
+                abilities and knowledge.
+            </h2>
+
+            <div class="options">
+                <button type="button" class="option" onclick="selectOption(this)">
+                    A. Sometimes
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    B. Always
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    C. Never
+                </button>
+            </div>
+
+            <button type="button" class="next-btn" onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </section>
+
+        <!-- Question 8 -->
+        <section class="question-box">
+
+            <p class="question-number">QUESTION 08</p>
+
+            <h2>
+                How do you feel when you come back from a shopping mall
+                without buying anything?
+            </h2>
+
+            <div class="options">
+                <button type="button" class="option" onclick="selectOption(this)">
+                    A. Come out with full confidence
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    B. Buy something you don't really need
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    C. Feel a little shy
+                </button>
+            </div>
+
+            <button type="button" class="next-btn" onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </section>
+
+        <!-- Question 9 -->
+        <section class="question-box">
+
+            <p class="question-number">QUESTION 09</p>
+
+            <h2>You avoid leadership roles in groups.</h2>
+
+            <div class="options">
+                <button type="button" class="option" onclick="selectOption(this)">
+                    A. Sometimes
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    B. Never
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    C. Always
+                </button>
+            </div>
+
+            <button type="button" class="next-btn" onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </section>
+
+        <!-- Question 10 -->
+        <section class="question-box">
+
+            <p class="question-number">QUESTION 10</p>
+
+            <h2>How do you feel when people give you attention?</h2>
+
+            <div class="options">
+                <button type="button" class="option" onclick="selectOption(this)">
+                    A. You feel nervous
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    B. You feel good and want more attention
+                </button>
+
+                <button type="button" class="option" onclick="selectOption(this)">
+                    C. You feel confident
+                </button>
+            </div>
+
+            <button type="button" class="next-btn" id="checkResult">
+                Submit Quiz ✨
+            </button>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="quiz-footer">
+            Believe in yourself and enjoy discovering your personality! 💜
+        </footer>
+
+    </main>
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>
